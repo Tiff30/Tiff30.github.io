@@ -10,13 +10,14 @@ body {
 /* 页面容器 */
 .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
     height: 100vh;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
 }
 
-/* 左侧插画 */
+/* 左侧图片 */
 .image-section {
     flex: 1;
     display: flex;
@@ -25,18 +26,20 @@ body {
 }
 
 .image-section img {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
 }
 
-/* 右侧表单区域 */
+/* 右侧文字和交互 */
 .form-section {
     flex: 1;
     text-align: center;
+    padding: 20px;
+    max-width: 600px;
 }
 
 .form-section h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
@@ -46,7 +49,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* 输入框 */
+/* 输入框样式 */
 input {
     width: 80%;
     padding: 10px;
@@ -57,7 +60,7 @@ input {
     font-size: 1rem;
 }
 
-/* 按钮 */
+/* 按钮样式 */
 button {
     width: 80%;
     padding: 10px;
@@ -74,22 +77,49 @@ button:hover {
     background-color: #F48FB1;
 }
 
-/* 选项区域 */
+/* Click It 和 See Privacy? 样式 */
 .options {
     display: flex;
     justify-content: space-around;
+    margin: 20px 0;
+    align-items: center;
     color: #F48FB1;
     font-size: 0.9rem;
 }
 
-/* 底部感谢 */
-.footer {
-    margin-top: 30px;
-    text-align: center;
-    color: #666;
+.options img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
 
-.icons img {
-    width: 30px;
-    margin: 5px;
+/* 弹窗样式 */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.popup button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #F8BBD0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #F48FB1;
 }
