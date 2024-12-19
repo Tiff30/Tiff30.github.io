@@ -8,12 +8,12 @@
 </head>
 <body>
     <div class="container">
-        <!-- 左侧插画 -->
+        <!-- 左侧图片 -->
         <div class="image-section">
-            <img src="Large@1x.jpg" alt="Illustration">
+            <img src="未命名作品.png" alt="Illustration">
         </div>
 
-        <!-- 右侧表单 -->
+        <!-- 右侧内容 -->
         <div class="form-section">
             <h1>👋 Welcome! My little Genius</h1>
             <p>Please leave your profile here and get started 💓</p>
@@ -21,24 +21,28 @@
             <form>
                 <input type="text" placeholder="Your Name" name="name" required>
                 <input type="text" placeholder="Your Gender" name="gender" required>
-
-                <div class="options">
-                    <label>❤️ Click It</label>
-                    <label>ℹ️ See Privicy?</label>
-                </div>
-
-                <button type="submit">Next</button>
             </form>
 
-            <!-- Appreciate Section -->
-            <div class="footer">
-                <p>Appreciate</p>
-                <div class="icons">
-                    <img src="alipay-icon.png" alt="Alipay">
-                    <img src="wechat-icon.png" alt="WeChat">
+            <div class="interactive">
+                <div class="click-it" id="click-it">
+                    <img src="like.png" alt="Like Icon">
+                    <span>Click It</span>
+                </div>
+                <div class="see-privacy" id="see-privacy">
+                    <img src="info.png" alt="Info Icon">
+                    <span>See Privicy?</span>
                 </div>
             </div>
+
+            <button type="submit">Next</button>
         </div>
     </div>
+
+    <!-- 弹窗 -->
+    <div id="popup" class="popup">
+        <p>你尊嘟还有隐私吗？</p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
