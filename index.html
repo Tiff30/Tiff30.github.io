@@ -8,12 +8,12 @@
 </head>
 <body>
     <div class="container">
-        <!-- 左侧图片 -->
+        <!-- 左侧插画 -->
         <div class="image-section">
             <img src="未命名作品.png" alt="Illustration">
         </div>
 
-        <!-- 右侧内容 -->
+        <!-- 右侧文字和交互 -->
         <div class="form-section">
             <h1>👋 Welcome! My little Genius</h1>
             <p>Please leave your profile here and get started 💓</p>
@@ -23,15 +23,14 @@
                 <input type="text" placeholder="Your Gender" name="gender" required>
             </form>
 
-            <div class="interactive">
-                <div class="click-it" id="click-it">
-                    <img src="like.png" alt="Like Icon">
-                    <span>Click It</span>
-                </div>
-                <div class="see-privacy" id="see-privacy">
-                    <img src="info.png" alt="Info Icon">
-                    <span>See Privicy?</span>
-                </div>
+            <div class="options">
+                <!-- Click It 图标 -->
+                <img id="like-icon" src="like.png" alt="Click It" class="clickable" onclick="toggleLike()">
+                <label for="like-icon">Click It</label>
+
+                <!-- See Privacy? 图标 -->
+                <img id="info-icon" src="info.png" alt="See Privacy" class="clickable" onclick="showPrivacy()">
+                <label for="info-icon">See Privacy?</label>
             </div>
 
             <button type="submit">Next</button>
@@ -39,8 +38,9 @@
     </div>
 
     <!-- 弹窗 -->
-    <div id="popup" class="popup">
+    <div id="privacy-popup" class="popup">
         <p>你尊嘟还有隐私吗？</p>
+        <button onclick="closePrivacy()">Close</button>
     </div>
 
     <script src="script.js"></script>
