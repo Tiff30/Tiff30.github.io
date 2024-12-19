@@ -25,15 +25,28 @@
 
             <div class="options">
                 <!-- Click It 图标 -->
-                <img id="like-icon" src="like.png" alt="Click It" class="clickable" onclick="toggleLike()">
-                <label for="like-icon">Click It</label>
+                <div class="icon-section" onclick="toggleLike()">
+                    <img id="like-icon" src="like.png" alt="Click It">
+                    <label>Click It</label>
+                </div>
 
                 <!-- See Privacy? 图标 -->
-                <img id="info-icon" src="info.png" alt="See Privacy" class="clickable" onclick="showPrivacy()">
-                <label for="info-icon">See Privacy?</label>
+                <div class="icon-section" onclick="showPrivacy()">
+                    <img id="info-icon" src="info.png" alt="See Privacy">
+                    <label>See Privacy?</label>
+                </div>
             </div>
 
             <button type="submit">Next</button>
+
+            <!-- Appreciate Section -->
+            <div class="footer">
+                <p>Appreciate</p>
+                <div class="icons">
+                    <img src="alipay-icon.png" alt="Alipay">
+                    <img src="wechat-icon.png" alt="WeChat">
+                </div>
+            </div>
         </div>
     </div>
 
