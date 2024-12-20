@@ -1,10 +1,12 @@
 // 切换喜欢的爱心状态
 function toggleLike() {
     const likeIcon = document.getElementById('like-icon');
-    if (likeIcon.src.includes('like.png')) {
-        likeIcon.src = 'likefull.png';
+    if (likeIcon.classList.contains('filled')) {
+        likeIcon.style.backgroundColor = 'transparent';
+        likeIcon.classList.remove('filled');
     } else {
-        likeIcon.src = 'like.png';
+        likeIcon.style.backgroundColor = '#F8BBD0';
+        likeIcon.classList.add('filled');
     }
 }
 
