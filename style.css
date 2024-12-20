@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Georgia', serif;
     background-color: #FDFDFE;
     color: #333;
 }
@@ -39,13 +39,16 @@ body {
 }
 
 .form-section h1 {
-    font-size: 2rem;
+    font-family: 'Georgia', serif;
+    font-size: 30px;
+    line-height: 50px;
     margin-bottom: 10px;
     color: #555;
 }
 
 .form-section p {
-    font-size: 1rem;
+    font-family: 'Georgia', serif;
+    font-size: 20px;
     color: #666;
     margin-bottom: 30px;
 }
@@ -58,7 +61,9 @@ input {
     border: 2px solid #F8BBD0;
     border-radius: 5px;
     box-sizing: border-box;
-    font-size: 1rem;
+    font-family: 'Georgia', serif;
+    font-size: 25px;
+    line-height: 36px;
 }
 
 /* 按钮样式 */
@@ -90,20 +95,30 @@ button:hover {
 
 .icon-section {
     display: flex;
-    flex-direction: column;
     align-items: center;
     cursor: pointer;
 }
 
 .icon-section img {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 5px;
+    margin-right: 8px;
+}
+
+#like-icon {
+    width: 46px;
+    height: 48px;
+    background-color #333;rest
+}
+
+#info-icon {
+    width: 41px;
+    height: 46px;
 }
 
 .icon-section label {
-    font-size: 0.9rem;
-    color: #666;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #F8BBD0;
 }
 
 /* Appreciate 部分 */
@@ -137,8 +152,14 @@ button:hover {
     padding: 20px;
     text-align: center;
     z-index: 1000;
-    width: 300px;
+    width: 600px;
+    height: 400px;
     border-radius: 10px;
+}
+
+.popup p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 .popup button {
